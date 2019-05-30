@@ -1,13 +1,75 @@
+/*
+  General Styling
+*/
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/*  
+  MAIN BANNER STYLING
+*/
+
+#banner {
+  background: url("/assets/background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+
+#banner-btn-outer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  height: 250px;
+  width: 250px;
+  border: 2px white;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-radius: 50%;
+}
+
+#banner-btn-inner {
+  position: relative;
+  top: 55px;
+  height: 140px;
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 4px #94d6de;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  cursor: pointer;
+}
+
+#banner-btn-view {
+  color: #94d6de;
+  font-size: 3rem;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+#banner-text-box {
+  width: 100%;
+  text-align: center;
+}
+
+.banner-name-text {
+  font-size: 2rem;
+  color: #efefef;
+  width: 100%;
+}
+
+#overlay {
+  background: rgba(10, 10, 10, 0.603);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
