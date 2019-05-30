@@ -30,6 +30,19 @@ body {
   border-left-style: solid;
   border-right-style: solid;
   border-radius: 50%;
+  /*
+    Animation
+  */
+  animation: clockwise 10s linear infinite;
+}
+
+@keyframes clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 #banner-btn-inner {
@@ -45,16 +58,34 @@ body {
   border-top-style: dotted;
   border-bottom-style: dotted;
   cursor: pointer;
+  /*
+    Animate
+  */
+
+  animation: counter-clockwise linear 15s infinite;
+}
+
+@keyframes counter-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-700deg);
+  }
 }
 
 #banner-btn-view {
+  position: absolute;
+  top: 187px;
+  left: 110px;
+  transform: none;
   color: #94d6de;
   font-size: 3rem;
-  padding-top: 30px;
-  margin-left: 20px;
 }
 
 #banner-text-box {
+  margin-top: 45px;
   width: 100%;
   text-align: center;
 }
@@ -65,6 +96,11 @@ body {
   width: 100%;
 }
 
+.banner-design-text {
+  font-size: 2rem;
+  color: #faad6a;
+}
+
 #overlay {
   background: rgba(10, 10, 10, 0.603);
   position: absolute;
@@ -72,4 +108,31 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+/*
+  IPHONE 6,7 & 8
+*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  /*
+    BANNER STLYING
+  */
+
+  #banner-btn-view {
+    left: 136px;
+  }
+}
+
+/*
+  IPHONE 6,7 & 8 PLUS
+*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  /*
+    BANNER STLYING
+  */
+
+  #banner-btn-view {
+    left: 156px;
+  }
 }

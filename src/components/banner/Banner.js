@@ -6,13 +6,12 @@ const Banner = () => {
       <div id="overlay">
         <div className="container">
           <div id="banner-btn-outer">
-            <div id="banner-btn-inner">
-              <div id="banner-btn-view">View</div>
-            </div>
+            <div id="banner-btn-inner" />
           </div>
-
+          <div id="banner-btn-view"> View</div>
           <div id="banner-text-box">
-            <p className="banner-name-text">Tony Soukkeo</p>
+            <span className="banner-name-text">Soukkeo</span>
+            <span className="banner-design-text">Designs.</span>
           </div>
         </div>
       </div>
