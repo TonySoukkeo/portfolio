@@ -3,6 +3,7 @@
 */
 
 body {
+  background: #fff1e1;
   margin: 0;
   padding: 0;
 }
@@ -108,6 +109,276 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+/*
+  ABOUT PAGE STYLING
+*/
+#about {
+  padding-bottom: 4rem;
+}
+#profile-image {
+  position: absolute;
+  top: -27%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 170px;
+  animation: rollin linear 0.7s;
+  border-radius: 50%;
+}
+
+@-moz-keyframes rollin {
+  0% {
+    opacity: 0;
+    margin-left: 0;
+    transform: rotate(180deg);
+  }
+  50% {
+    margin-left: 5em;
+  }
+  75% {
+    margin-left: 9em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: auto;
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rollin {
+  0% {
+    opacity: 0;
+    margin-left: 0;
+    transform: rotate(180deg);
+  }
+  50% {
+    margin-left: 5em;
+  }
+  75% {
+    margin-left: 9em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: auto;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rollin {
+  0% {
+    opacity: 0;
+    margin-left: 0;
+    transform: rotate(180deg);
+  }
+  50% {
+    margin-left: 5em;
+  }
+  75% {
+    margin-left: 9em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: auto;
+    transform: rotate(0deg);
+  }
+}
+
+#profile-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card-styling {
+  position: relative;
+  height: 350px;
+  padding-top: 100px;
+  font-size: 0.9rem;
+  background: #f7f7f7;
+}
+
+/*
+  SKILLS STLYING
+*/
+
+#languages {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#languages h1 {
+  font-size: 1.9em;
+}
+
+#frameworks h1 {
+  font-size: 1.2em;
+}
+
+#languages:nth-child(odd) div,
+#frameworks:nth-child(odd) div {
+  margin-bottom: 0.5rem;
+}
+
+#css-block,
+#html-block,
+#javascript-block,
+#react-block,
+#bootstrap-block {
+  height: 4rem;
+  border: 4px solid #dbdbda;
+  padding-left: 1.5rem;
+  font-size: 1.3rem;
+  color: #e5e5e4;
+}
+
+#css-block i,
+#html-block i,
+#javascript-block i,
+#react-block i,
+#bootstrap-block i {
+  margin-top: 0.7rem;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+#css-block {
+  background: #2e8ecd;
+}
+
+#css-block i {
+  color: #013e60;
+}
+
+#html-block {
+  background: #f4502a;
+}
+
+#html-block i {
+  color: #511b0e;
+}
+
+#javascript-block {
+  background: #e0c03b;
+}
+
+#javascript-block i {
+  color: #75641f;
+}
+
+#react-block {
+  background: #5caec5;
+}
+
+#react-block i {
+  color: #1f3a42;
+}
+
+#bootstrap-block {
+  background: #7e63ab;
+}
+
+#bootstrap-block i {
+  color: #372a51;
+}
+
+/*
+  PROJECTS PAGE STYLING
+*/
+
+#projects {
+  background: linear-gradient(-364deg, #6eccdf 85%, #fff1e1 calc(85% + 2px));
+}
+
+#projects h1 {
+  margin-bottom: 1rem;
+  transform: rotate(-8deg);
+  font-size: 2.7rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 20rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.dimmed {
+  position: relative;
+}
+
+.dimmed:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: #f7f7f7;
+}
+
+.card-btn {
+  position: relative;
+  top: 130px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.flip-card:hover .card-btn {
+  z-index: 0;
+}
+
+#project1,
+#project2,
+#project3 {
+  height: 20rem;
+  background-position: top;
+  background-size: cover;
+  color: white;
+}
+
+#project1 {
+  background-image: url("/assets/project1.png");
+}
+
+#project2 {
+  background-image: url("/assets/project2.png");
+}
+
+#project3 {
+  background-image: url("/assets/project3.png");
 }
 
 /*
