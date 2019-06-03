@@ -7,7 +7,7 @@ const Banner = () => {
       <div id="overlay">
         <div className="container">
           <div id="banner-btn-outer">
-            <Link to="/about">
+            <Link to="/main">
               {" "}
               <div id="banner-btn-inner" />{" "}
             </Link>

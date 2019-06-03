@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="d-block d-sm-none">
-      <nav className="navbar navbar-light ">
-        <a href="" className="navbar-brand">
+    <nav className="navbar navbar-light navbar-expand-md text-center sticky-top">
+      <div className="container">
+        <a href="/" className="navbar-brand">
           <img
             style={{
               width: "80px",
@@ -15,33 +14,7 @@ const Navbar = () => {
             alt=""
           />
         </a>
-        <span />
-        <span>
-          <a href="tel:4068991762">
-            <i
-              style={{
-                cursor: "pointer",
-                marginLeft: "60px",
-                fontSize: "1.5rem",
-                color: "#000033"
-              }}
-              className="fas fa-phone-square"
-            />
-          </a>
-        </span>
-        <span>
-          <a href="https://github.com/TonySoukkeo" target="_blank">
-            <i
-              style={{
-                cursor: "pointer",
-                marginLeft: "10px",
-                fontSize: "1.8rem",
-                color: "#007c00"
-              }}
-              className="fab fa-github-alt"
-            />
-          </a>
-        </span>
+
         <button
           typ="button"
           data-toggle="collapse"
@@ -52,26 +25,74 @@ const Navbar = () => {
         </button>
 
         <div id="navbarNav" className="collapse navbar-collapse">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a href="" className="nav-link">
+              <a className="nav-link" href="tel:4068991762">
+                <i
+                  style={{
+                    color: "black",
+                    fontSize: "1.7rem"
+                  }}
+                  className="fas fa-phone"
+                />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://github.com/TonySoukkeo"
+                target="_blank"
+              >
+                <i
+                  style={{
+                    color: "#007c00",
+                    fontSize: "2rem"
+                  }}
+                  className="fab fa-github-alt"
+                />
+              </a>
+            </li>
+          </ul>
+          <div className="d-none d-md-block ml-auto">
+            <ul className="navbar-nav ">
+              <li className="nav-item">
+                <a href="#about" className="nav-link">
+                  About
+                </a>{" "}
+              </li>
+              <li className="nav-item">
+                <a href="#projects" className="nav-link">
+                  Projects
+                </a>{" "}
+              </li>
+              <li className="nav-item">
+                <a href="#contact" className="nav-link">
+                  Contact
+                </a>{" "}
+              </li>
+            </ul>
+          </div>
+
+          <ul className="d-block d-md-none navbar-nav ml-auto">
+            <li className="nav-item">
+              <a href="#about" className="nav-link">
                 About
               </a>{" "}
             </li>
             <li className="nav-item">
-              <a href="" className="nav-link">
+              <a href="#projects" className="nav-link">
                 Projects
               </a>{" "}
             </li>
             <li className="nav-item">
-              <a href="" className="nav-link">
+              <a href="#contact" className="nav-link">
                 Contact
               </a>{" "}
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

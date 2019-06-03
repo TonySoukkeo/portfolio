@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="about" className="container">
       <div className="row">
-        <div className="col-md-5">
+        <div className="col-lg-5">
           <div
             style={{
               marginTop: "100px"
@@ -28,10 +28,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-7">
+        <div className="col-lg-7">
           <div id="skills" className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div id="languages">
                   <h1 className="text-center">Languages</h1>
                   <div id="css-block">
@@ -45,7 +45,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div id="frameworks">
                   <h1 className="text-center">Frameworks / Libraries</h1>
                   <div id="react-block">

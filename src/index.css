@@ -8,6 +8,14 @@ body {
   padding: 0;
 }
 
+/*
+  NAVBAR STYLING
+*/
+.navbar {
+  background: #fff1e1;
+  border-bottom: 1px #6eccdf solid;
+}
+
 /*  
   MAIN BANNER STYLING
 */
@@ -115,6 +123,7 @@ body {
   ABOUT PAGE STYLING
 */
 #about {
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 #profile-image {
@@ -207,7 +216,10 @@ body {
 
 #languages {
   margin-top: 50px;
-  margin-bottom: 50px;
+}
+
+#frameworks {
+  margin-top: 63px;
 }
 
 #languages h1 {
@@ -382,6 +394,53 @@ body {
 }
 
 /*
+  CONTACT STYLING
+*/
+#contact {
+  background: linear-gradient(364deg, #fff1e1 70%, #6eccdf calc(70% + 2px));
+}
+
+.contact-content {
+  padding-top: 250px;
+}
+
+.phone {
+  margin-bottom: 20px;
+}
+
+.github-icon {
+  color: #007c00;
+  transition: color 0.2s ease-in;
+}
+
+.github-icon:hover {
+  color: #005400;
+}
+
+.icon-text {
+  color: black;
+  margin-left: 20px;
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+}
+
+/*
+  FOOTER STYLING
+*/
+#footer {
+  padding: 10px;
+  border-top: 1px solid black;
+  margin-top: 90px;
+  height: 60px;
+  background: #f7e8cb;
+}
+
+.footer-name {
+  margin-top: 10px;
+}
+
+/*
   IPHONE 6,7 & 8
 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
@@ -405,5 +464,35 @@ body {
 
   #banner-btn-view {
     left: 156px;
+  }
+}
+
+/*
+  COMPUTER SCREENS
+*/
+
+@media (min-width: 992px) {
+  /*
+    ABOUT PAGE STYLING
+  */
+
+  .card-styling {
+    -webkit-box-shadow: 4px 6px 11px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 4px 6px 11px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 4px 6px 11px 0px rgba(0, 0, 0, 0.29);
+  }
+
+  /*
+    PROJECTS STYLING
+  */
+  #projects {
+    padding-top: 100px;
+  }
+
+  #projects h1 {
+    position: relative;
+    top: -128px;
+    transform: rotate(-4deg);
+    font-size: 5rem;
   }
 }
