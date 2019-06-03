@@ -8,7 +8,7 @@ const Projects = () => {
           My{" "}
           <span
             style={{
-              color: "#00adef"
+              color: "#faad6a"
             }}
           >
             {" "}

@@ -15,6 +15,17 @@ body {
   background: #fff1e1;
   border-bottom: 1px #6eccdf solid;
 }
+.nav-link {
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+}
+
+.active {
+  color: blue !important;
+}
+.nav-link:hover {
+  color: #2e8ecd !important;
+}
 
 /*  
   MAIN BANNER STYLING
@@ -30,6 +41,7 @@ body {
 }
 
 #banner-btn-outer {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -85,12 +97,13 @@ body {
 }
 
 #banner-btn-view {
-  position: absolute;
-  top: 187px;
-  left: 110px;
-  transform: none;
+  position: relative;
+  top: -253px;
+  margin-left: auto;
+  margin-right: auto;
   color: #94d6de;
   font-size: 3rem;
+  width: 100px;
 }
 
 #banner-text-box {
@@ -306,7 +319,7 @@ body {
 }
 
 #projects h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   transform: rotate(-8deg);
   font-size: 2.7rem;
 }
@@ -400,6 +413,10 @@ body {
   background: linear-gradient(364deg, #fff1e1 70%, #6eccdf calc(70% + 2px));
 }
 
+#contact h2 {
+  color: #2e8ecd;
+}
+
 .contact-content {
   padding-top: 250px;
 }
@@ -408,13 +425,15 @@ body {
   margin-bottom: 20px;
 }
 
-.github-icon {
-  color: #007c00;
-  transition: color 0.2s ease-in;
+.phone a,
+.email a {
+  text-decoration: none;
+  transition: 0.3s ease-in;
 }
 
-.github-icon:hover {
-  color: #005400;
+.github-icon {
+  color: #007c00;
+  transition: 0.2s ease-in;
 }
 
 .icon-text {
@@ -441,33 +460,6 @@ body {
 }
 
 /*
-  IPHONE 6,7 & 8
-*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  /*
-    BANNER STLYING
-  */
-
-  #banner-btn-view {
-    left: 136px;
-  }
-}
-
-/*
-  IPHONE 6,7 & 8 PLUS
-*/
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-  /*
-    BANNER STLYING
-  */
-
-  #banner-btn-view {
-    left: 156px;
-  }
-}
-
-/*
   COMPUTER SCREENS
 */
 
@@ -491,8 +483,25 @@ body {
 
   #projects h1 {
     position: relative;
+    margin-bottom: 1rem;
     top: -128px;
     transform: rotate(-4deg);
     font-size: 5rem;
+  }
+
+  /*
+    CONTACT PAGE STYLING
+  */
+
+  .phone a:hover,
+  .email a:hover {
+    color: #faad6a;
+    font-size: 1.3rem;
+  }
+
+  .github-icon:hover {
+    color: #005400;
+    font-size: 7rem;
+    transform: rotate(-10deg);
   }
 }
