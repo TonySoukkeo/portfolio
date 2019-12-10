@@ -1,29 +1,12 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import Banner from "./components/banner/Banner";
-import Main from "./components/main/Main";
+import LandingPage from "./components/LandingPage/LandingPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./index.css";
+import "./css/style.css";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={Banner} />
-        </Switch>
-        <Route
-          path="/(.+)"
-          render={() => (
-            <div>
-              <Navbar />
-              <Switch>
-                <Route exact path="/main" component={Main} />
-              </Switch>
-            </div>
-          )}
-        />
-      </div>
+      <LandingPage />
     </Router>
   );
 }

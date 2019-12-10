@@ -1,0 +1,83 @@
+.landing-page {
+  position: relative;
+  height: 100vh;
+  background-color: $color-secondary-light;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    padding: 8rem;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-dark, 0.8),
+        rgba($color-primary-light, 0.8)
+      ),
+      url("../assets/hero.jpg");
+    background-size: cover;
+    clip-path: polygon(50% 0%, 84% 0, 51% 100%, 0 100%, 0 0);
+
+    @include respond(ipadpro) {
+      clip-path: none;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    display: block;
+    padding: 2rem 10rem;
+    top: 55%;
+    left: 100%;
+    width: 50%;
+    opacity: 0;
+    border-radius: 3px;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.2);
+    animation: header-slidein-left 1.2s ease-out forwards;
+    backface-visibility: hidden;
+
+    @include respond(ipadpro) {
+      width: 100%;
+    }
+
+    @include respond(small) {
+      padding: 2rem 5rem;
+      left: 30%;
+      animation: header-slidein-left-sm 1.2s ease-out forwards;
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    position: absolute;
+    top: 30%;
+  }
+
+  &__btn {
+    &::before {
+      content: "";
+      position: absolute;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:active {
+      bottom: -9rem;
+    }
+
+    &-text {
+      transform: translateY(-3rem);
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $color-secondary-light;
+      transition: all 0.3s;
+    }
+
+    &:hover &-text {
+      font-size: 3.2rem;
+    }
+  }
+}

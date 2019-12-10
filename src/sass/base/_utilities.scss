@@ -1,0 +1,14 @@
+.mb-small {
+  margin-bottom: 2rem;
+  @include respond(ipadpro) {
+    margin-bottom: 0;
+  }
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+
+  @include respond(ipadpro) {
+    margin-bottom: 0;
+  }
+}

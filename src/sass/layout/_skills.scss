@@ -1,0 +1,94 @@
+.skills {
+  grid-column: col-start 7 / col-end 10;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-gap: 3rem;
+
+  @include respond(ipadpro) {
+    grid-column: col-start 1 / col-end 10;
+  }
+
+  & > * {
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color: $color-darkgrey;
+
+    i {
+      top: 50%;
+      margin-left: -1.4rem;
+      margin-top: -2rem;
+      font-size: 6rem;
+
+      @include respond(smallest) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__1 {
+    i {
+      color: #f4502a;
+    }
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
+
+  &__2 {
+    i {
+      color: #2e8ecd;
+    }
+    grid-column: 5 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &__3 {
+    i {
+      color: #e0c03b;
+    }
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+  }
+
+  &__4 {
+    i {
+      color: #5caec5;
+    }
+    grid-column: 5 / -1;
+    grid-row: 2 / 3;
+  }
+
+  &__5 {
+    i {
+      color: #7e63ab;
+    }
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
+
+  &__6 {
+    i {
+      color: #cd6799;
+    }
+    grid-column: 5 / -1;
+    grid-row: 3 / 4;
+  }
+
+  &__text {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $color-secondary-light;
+
+    @include respond(smallest) {
+      font-size: 1.4rem;
+    }
+  }
+}

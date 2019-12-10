@@ -1,0 +1,11 @@
+.about {
+  grid-column: col-start 1 / col-end 6;
+
+  @include respond(ipadpro) {
+    grid-column: col-start 1 / col-end 10;
+  }
+
+  @include respond(smallest) {
+    margin-top: -8rem;
+  }
+}

@@ -1,0 +1,75 @@
+.btn-toggle {
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  z-index: 150;
+
+  @include respond(tiny) {
+    height: 14rem;
+    width: 14rem;
+    bottom: -7rem;
+  }
+
+  &__background {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      to bottom left,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: 10;
+    transition: all 0.8s cubic-bezier(0.48, -0.01, 0.36, 0.31);
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__text {
+    position: absolute;
+    text-transform: uppercase;
+    color: $color-secondary-light;
+    font-size: 3rem;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    transition: font-size 0.3s;
+  }
+
+  &:hover {
+    bottom: -8rem;
+  }
+
+  &:hover &__text {
+    font-size: 3.2rem;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+}
+
+// Display main page when checked
+
+.btn-toggle__checkbox:checked ~ .main-page {
+  opacity: 1;
+  visibility: visible;
+}

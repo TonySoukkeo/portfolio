@@ -1,0 +1,75 @@
+/*
+  COLORS
+*/
+
+$color-primary-dark: #042f4b;
+$color-primary-light: #074c72;
+
+$color-secondary-light: #fef5da;
+$color-secondary-dark: #fbc99d;
+
+$color-tertiary-light: #eb1750;
+$color-tertiary-dark: #ad1242;
+
+$color-green-light: #62dd8d;
+$color-green-dark: #5fb17b;
+
+$color-black: #000;
+
+$color-darkgrey: #333;
+
+/*
+    BOX SHADOW
+  */
+$box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.14);
+/*
+  HEADING
+*/
+
+.heading-1 {
+  text-transform: uppercase;
+  color: $color-secondary-light;
+
+  &--large {
+    font-size: 8rem;
+    letter-spacing: 1rem;
+
+    @include respond(small) {
+      font-size: 6rem;
+    }
+
+    @include respond(smallest) {
+      font-size: 5rem;
+      line-height: 1;
+    }
+  }
+}
+
+.heading-2 {
+  color: $color-secondary-light;
+  background-color: $color-tertiary-light;
+
+  &--medium {
+    font-size: 3rem;
+
+    @include respond(small) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.heading-3 {
+  color: $color-secondary-light;
+  font-size: 3rem;
+
+  @include respond(medium) {
+    font-size: 1.5rem;
+  }
+}
+
+.landing-page {
+  &__text-style {
+    color: $color-secondary-dark;
+    font-size: 8rem;
+  }
+}

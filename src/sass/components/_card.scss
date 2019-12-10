@@ -1,0 +1,49 @@
+.card {
+  color: #333;
+  height: 100%;
+  grid-column: 1 / span 8;
+  background-image: linear-gradient(
+    rgba($color-secondary-light, 0.9),
+    rgba($color-secondary-light, 0.9)
+  );
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  display: flex;
+  align-items: center;
+
+  @include respond(large) {
+    flex-direction: column;
+  }
+
+  &__header {
+    font-size: 5rem;
+    line-height: 1.2;
+    background-color: $color-primary-light;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(large) {
+      height: 8rem;
+    }
+
+    &-text {
+      color: white;
+      text-transform: uppercase;
+      font-size: 4rem;
+
+      @include respond(smallest) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__text {
+    line-height: 1.8;
+    font-size: 1.8rem;
+    padding: 3rem;
+  }
+}

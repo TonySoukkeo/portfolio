@@ -1,0 +1,253 @@
+.contact {
+  position: relative;
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(
+    to top left,
+    rgba($color-primary-dark, 1),
+    rgba($color-primary-light, 1)
+  );
+  padding: 25rem 10rem 10rem 10rem;
+  margin-top: -6rem;
+  display: grid;
+  // height: 96vh;
+  grid-template-columns: repeat(8, 1fr);
+  z-index: 30;
+
+  @include respond(large) {
+    grid-row-gap: 10rem;
+  }
+
+  @include respond(small) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @include respond(smallest) {
+    margin-top: -30rem;
+
+    padding-bottom: 10rem;
+  }
+
+  @include respond(tiny) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__container {
+    grid-column: 1 / 7;
+    background-image: linear-gradient(
+      rgba($color-secondary-light, 0.8),
+      rgba($color-secondary-light, 0.8)
+    );
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 0.6rem repeat(6, 1fr) 3rem;
+    grid-template-rows: 3rem repeat(2, 1fr) 3rem;
+    grid-column-gap: 3rem;
+    box-shadow: $box-shadow;
+
+    @include respond(ipadpro) {
+      grid-column: 1 / -1;
+    }
+
+    @include respond(medium) {
+      grid-template-rows: min-content;
+    }
+
+    &-text {
+      grid-row: 1 / -1;
+      grid-column: 5 / -1;
+      background-image: linear-gradient(
+          rgba($color-tertiary-dark, 0.5),
+          rgba($color-tertiary-light, 0.5)
+        ),
+        url("../assets/contact-banner.jpeg");
+      background-size: cover;
+      background-position: 15%;
+      font-size: 6rem;
+      font-weight: 900;
+      color: $color-secondary-light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond(largest) {
+        font-size: 5rem;
+      }
+
+      @include respond(medium) {
+        grid-column: 1 / -1;
+        font-size: 3rem;
+        padding: 4rem 0;
+        margin-bottom: 5rem;
+      }
+
+      @include respond(tiny) {
+        padding: 15rem 0;
+        font-size: 8rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.2rem;
+    height: 52rem;
+    grid-row: 2 / 4;
+    grid-column: 2 / 5;
+
+    @include respond(medium) {
+      grid-column: 1 / 9;
+    }
+
+    @include respond(smallest) {
+      height: 50rem;
+    }
+
+    &-label {
+      margin-left: 2rem;
+      transform: translateY(-7rem);
+      display: block;
+      text-transform: uppercase;
+      color: $color-darkgrey;
+      transition: all 0.3s;
+      font-size: 1.4rem;
+      font-weight: 700;
+
+      &-message {
+        transform: translateY(-11.3rem);
+        display: block;
+        text-transform: uppercase;
+        color: #1c1c1c;
+        transition: all 0.3s;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        font-weight: 700;
+      }
+    }
+
+    &-group {
+      margin: 3rem 0;
+      padding: 0 2.5rem;
+    }
+
+    &-input {
+      font-family: inherit;
+      padding: 1rem 2rem;
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      font-size: 1.6rem;
+      border-bottom: 1px solid #333;
+      outline: none;
+    }
+
+    &-input:focus + &-label {
+      transform: translateY(0.8rem);
+      color: green;
+      font-size: 1rem;
+    }
+
+    &-input:focus + &-label-message {
+      transform: translateY(0.8rem);
+      color: green;
+      font-size: 1rem;
+    }
+
+    &-input:focus {
+      border-bottom: 3px solid green;
+      box-shadow: $box-shadow;
+    }
+
+    &-input:focus:invalid {
+      outline: none;
+      border: none;
+      border-bottom: 3px solid red;
+    }
+
+    &-btn {
+      align-self: start;
+      margin-left: 2rem;
+      padding: 1rem 2.2rem;
+      border-radius: 100px;
+      border: none;
+      font-size: 2.6rem;
+      background-image: linear-gradient(
+        to right,
+        rgba(#ad1242, 1),
+        rgba(#eb1750, 1)
+      );
+      color: $color-secondary-light;
+      box-shadow: $box-shadow;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+      }
+
+      &:focus {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+        outline: none;
+      }
+    }
+  }
+
+  &__group {
+    text-align: center;
+    p {
+      margin-bottom: 3rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $color-secondary-light;
+    }
+    grid-column: 8 / 9;
+
+    @include respond(ipadpro) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 6 / 7;
+
+    @include respond(large) {
+      justify-content: center;
+    }
+
+    @include respond(ipadpro) {
+      flex-direction: row;
+    }
+
+    & > * {
+      font-size: 15rem;
+      margin-top: -5rem;
+
+      @include respond(ipadpro) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__github {
+    color: rgb(37, 37, 37);
+    transition: all 0.4s;
+    &:hover {
+      transform: translateY(-1.2rem) rotate(10deg);
+    }
+  }
+
+  &__linkedin {
+    color: #709edf;
+    transition: all 0.4s;
+    &:hover {
+      transform: translateY(-1.2rem) rotate(10deg);
+    }
+  }
+}
