@@ -618,14 +618,16 @@ body {
     .project__card--back-website:hover a {
       color: #fbc99d; }
     .project__card--back-1 {
-      background-image: linear-gradient(to bottom right, #042f4b, #074c72); }
-    .project__card--back-2 {
-      background-image: linear-gradient(to bottom right, #f4502a, #cc3d25); }
-    .project__card--back-3 {
-      background-image: linear-gradient(to bottom right, #cd6799, #9e5179); }
-    .project__card--back-4 {
       background-image: linear-gradient(to bottom right, #2e8ecd, #23729e); }
+    .project__card--back-2 {
+      background-image: linear-gradient(to bottom right, #042f4b, #074c72); }
+    .project__card--back-3 {
+      background-image: linear-gradient(to bottom right, #f4502a, #cc3d25); }
+    .project__card--back-4 {
+      background-image: linear-gradient(to bottom right, #cd6799, #9e5179); }
     .project__card--back-5 {
+      background-image: linear-gradient(to bottom right, #2e8ecd, #23729e); }
+    .project__card--back-6 {
       background-image: linear-gradient(to bottom right, #62dd8d, #5fb17b); }
 
 .project__card-image {
@@ -636,14 +638,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   margin-bottom: 2rem; }
   .project__card-image-1 {
-    background-image: linear-gradient(to bottom right, rgba(4, 47, 75, 0.5), rgba(7, 76, 114, 0.5)), url("../assets/project1.png"); }
+    background-image: linear-gradient(to bottom right, rgba(4, 47, 75, 0.5), rgba(7, 76, 114, 0.5)), url("../assets/project6.png"); }
   .project__card-image-2 {
-    background-image: linear-gradient(to bottom right, rgba(244, 80, 42, 0.5), rgba(204, 61, 37, 0.5)), url("../assets/project2.png"); }
+    background-image: linear-gradient(to bottom right, rgba(4, 47, 75, 0.5), rgba(7, 76, 114, 0.5)), url("../assets/project1.png"); }
   .project__card-image-3 {
-    background-image: linear-gradient(to bottom right, rgba(205, 103, 153, 0.5), rgba(158, 81, 121, 0.5)), url("../assets/project3.png"); }
+    background-image: linear-gradient(to bottom right, rgba(244, 80, 42, 0.5), rgba(204, 61, 37, 0.5)), url("../assets/project2.png"); }
   .project__card-image-4 {
-    background-image: linear-gradient(to bottom right, rgba(46, 142, 205, 0.5), rgba(35, 114, 158, 0.5)), url("../assets/project4.png"); }
+    background-image: linear-gradient(to bottom right, rgba(205, 103, 153, 0.5), rgba(158, 81, 121, 0.5)), url("../assets/project3.png"); }
   .project__card-image-5 {
+    background-image: linear-gradient(to bottom right, rgba(46, 142, 205, 0.5), rgba(35, 114, 158, 0.5)), url("../assets/project4.png"); }
+  .project__card-image-6 {
     background-image: linear-gradient(to bottom right, rgba(98, 221, 141, 0.5), rgba(95, 177, 123, 0.5)), url("../assets/project5.png"); }
 
 .project__card-header {
@@ -660,14 +664,16 @@ body {
   box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.14);
   color: #fef5da; }
   .project__card-header--1 {
-    background-image: linear-gradient(rgba(7, 76, 114, 0.9), rgba(4, 47, 75, 0.9)); }
-  .project__card-header--2 {
-    background-image: linear-gradient(to bottom right, rgba(244, 80, 42, 0.9), rgba(204, 61, 37, 0.9)); }
-  .project__card-header--3 {
-    background-image: linear-gradient(to bottom right, rgba(205, 103, 153, 0.9), rgba(158, 81, 121, 0.9)); }
-  .project__card-header--4 {
     background-image: linear-gradient(to bottom right, rgba(46, 142, 205, 0.9), rgba(35, 114, 158, 0.9)); }
+  .project__card-header--2 {
+    background-image: linear-gradient(rgba(7, 76, 114, 0.9), rgba(4, 47, 75, 0.9)); }
+  .project__card-header--3 {
+    background-image: linear-gradient(to bottom right, rgba(244, 80, 42, 0.9), rgba(204, 61, 37, 0.9)); }
+  .project__card-header--4 {
+    background-image: linear-gradient(to bottom right, rgba(205, 103, 153, 0.9), rgba(158, 81, 121, 0.9)); }
   .project__card-header--5 {
+    background-image: linear-gradient(to bottom right, rgba(46, 142, 205, 0.9), rgba(35, 114, 158, 0.9)); }
+  .project__card-header--6 {
     background-image: linear-gradient(to bottom right, rgba(98, 221, 141, 0.9), rgba(95, 177, 123, 0.9)); }
 
 .project__card-text {

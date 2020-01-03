@@ -58,7 +58,7 @@ const projects = [
     subDesc:
       "Laid out beautifully in a modern and slick look, responsive, and with some nice subtle animations. No frameworks used, built using pure html, css, and javascript.",
     github: "https://github.com/TonySoukkeo/ScandalTribute",
-    website: "http://scandaltribute.updog.co/"
+    website: "https://tonysoukkeo.github.io/ScandalTribute/"
   }
 ];
 
